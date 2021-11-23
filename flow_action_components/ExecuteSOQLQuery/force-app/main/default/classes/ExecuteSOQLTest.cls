@@ -18,6 +18,18 @@ public class ExecuteSOQLTest {
     }
     
     @isTest
+    /*Time Started	11/23/2021 12:32 PM
+    Class	ExecuteSOQLTest
+    Method Name	testExecuteSOQLMonthDayCommaYear
+    Pass/Fail	Fail
+    Error Message	System.TypeException: Invalid date/time: 04/12/2020, 12:00 am
+    Stack Trace	Class.ExecuteSOQL.getFormattedValue: line 134, column 1
+    Class.ExecuteSOQL.putFormattedValues: line 103, column 1
+    Class.ExecuteSOQL.replaceWithFormattedValues: line 77, column 1
+    Class.ExecuteSOQL.execute: line 14, column 1
+    Class.ExecuteSOQLTest.testExecuteSOQLMonthDayCommaYear: line 30, column 1
+    
+    For details please contact: hartnady@gmail.com*/
     private static void testExecuteSOQLMonthDayCommaYear() {
         Account acc = new Account(Name = 'Test Account');
         insert acc;
